@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,13 +25,18 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="66"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jum-fg-oCm">
-                            <rect key="frame" x="16" y="16" width="303" height="34"/>
+                            <rect key="frame" x="16" y="16" width="251" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-8Y-8Os">
-                            <rect key="frame" x="329" y="16" width="48" height="34"/>
-                            <state key="normal" title="Serach"/>
+                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-8Y-8Os">
+                            <rect key="frame" x="277" y="16" width="100" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="rab-Zt-GBS"/>
+                            </constraints>
+                            <state key="normal" title="Unsplash" image="arrow.up.arrow.down" catalog="system">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
                             <connections>
                                 <action selector="SearchAction:" destination="-1" eventType="touchUpInside" id="zkt-eG-wNT"/>
                             </connections>
@@ -51,7 +57,7 @@
                     <rect key="frame" x="0.0" y="125" width="393" height="693"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover a world of visual possibilities in our image bank. Each photo tells a story, what will be yours?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kig-NV-pvC">
-                            <rect key="frame" x="41.666666666666629" y="216" width="310" height="61"/>
+                            <rect key="frame" x="41.666666666666657" y="216" width="310" height="61"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="310" id="yPl-br-ijA"/>
                             </constraints>
@@ -94,7 +100,11 @@
         </view>
     </objects>
     <resources>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="97"/>
         <image name="image" width="219" height="157"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
