@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F450A9442C22946700FE421E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9432C22946700FE421E /* AppDelegate.swift */; };
-		F450A9462C22946700FE421E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9452C22946700FE421E /* SceneDelegate.swift */; };
-		F450A9482C22946700FE421E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9472C22946700FE421E /* ViewController.swift */; };
-		F450A94B2C22946700FE421E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F450A94A2C22946700FE421E /* Base */; };
 		F450A94D2C22946900FE421E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F450A94C2C22946900FE421E /* Assets.xcassets */; };
 		F450A9502C22946900FE421E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F450A94F2C22946900FE421E /* Base */; };
 		F450A95B2C22946900FE421E /* PSUIKITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A95A2C22946900FE421E /* PSUIKITTests.swift */; };
 		F450A9652C22946900FE421E /* PSUIKITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9642C22946900FE421E /* PSUIKITUITests.swift */; };
 		F450A9672C22946900FE421E /* PSUIKITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9662C22946900FE421E /* PSUIKITUITestsLaunchTests.swift */; };
+		F450A9782C22971700FE421E /* SerachViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450A9772C22971700FE421E /* SerachViewController.xib */; };
+		F450A9792C22971700FE421E /* SerachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9762C22971700FE421E /* SerachViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 /* Begin PBXFileReference section */
 		F450A9402C22946700FE421E /* PSUIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSUIKIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F450A9432C22946700FE421E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F450A9452C22946700FE421E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F450A9472C22946700FE421E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F450A94A2C22946700FE421E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F450A94C2C22946900FE421E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F450A94F2C22946900FE421E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F450A9512C22946900FE421E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +45,8 @@
 		F450A9602C22946900FE421E /* PSUIKITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSUIKITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F450A9642C22946900FE421E /* PSUIKITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUIKITUITests.swift; sourceTree = "<group>"; };
 		F450A9662C22946900FE421E /* PSUIKITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUIKITUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F450A9762C22971700FE421E /* SerachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachViewController.swift; sourceTree = "<group>"; };
+		F450A9772C22971700FE421E /* SerachViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerachViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				F450A9432C22946700FE421E /* AppDelegate.swift */,
-				F450A9452C22946700FE421E /* SceneDelegate.swift */,
-				F450A9472C22946700FE421E /* ViewController.swift */,
-				F450A9492C22946700FE421E /* Main.storyboard */,
-				F450A94C2C22946900FE421E /* Assets.xcassets */,
-				F450A94E2C22946900FE421E /* LaunchScreen.storyboard */,
+				F450A9742C22957E00FE421E /* Controllers */,
+				F450A9732C22957300FE421E /* Views */,
+				F450A9752C22967A00FE421E /* Reources */,
 				F450A9512C22946900FE421E /* Info.plist */,
 			);
 			path = PSUIKIT;
@@ -125,6 +121,31 @@
 				F450A9662C22946900FE421E /* PSUIKITUITestsLaunchTests.swift */,
 			);
 			path = PSUIKITUITests;
+			sourceTree = "<group>";
+		};
+		F450A9732C22957300FE421E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F450A9772C22971700FE421E /* SerachViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F450A9742C22957E00FE421E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F450A9762C22971700FE421E /* SerachViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F450A9752C22967A00FE421E /* Reources */ = {
+			isa = PBXGroup;
+			children = (
+				F450A94C2C22946900FE421E /* Assets.xcassets */,
+				F450A94E2C22946900FE421E /* LaunchScreen.storyboard */,
+			);
+			path = Reources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F450A94D2C22946900FE421E /* Assets.xcassets in Resources */,
+				F450A9782C22971700FE421E /* SerachViewController.xib in Resources */,
 				F450A9502C22946900FE421E /* Base in Resources */,
-				F450A94B2C22946700FE421E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F450A9482C22946700FE421E /* ViewController.swift in Sources */,
+				F450A9792C22971700FE421E /* SerachViewController.swift in Sources */,
 				F450A9442C22946700FE421E /* AppDelegate.swift in Sources */,
-				F450A9462C22946700FE421E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F450A9492C22946700FE421E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F450A94A2C22946700FE421E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F450A94E2C22946900FE421E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,9 +457,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PSUIKIT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pic Seeker UIKIT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,9 +489,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PSUIKIT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pic Seeker UIKIT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
