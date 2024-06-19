@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SerachViewController" customModule="PSUIKIT" customModuleProvider="target">
             <connections>
+                <outlet property="searchButton" destination="Wqk-8Y-8Os" id="8Na-Wd-eIU"/>
+                <outlet property="searchTextField" destination="jum-fg-oCm" id="qlm-xe-1ET"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +20,81 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZI-ey-fRg">
-                    <rect key="frame" x="167" y="134" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdR-LO-lv5" userLabel="SerachBar">
+                    <rect key="frame" x="0.0" y="59" width="393" height="66"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jum-fg-oCm">
+                            <rect key="frame" x="16" y="16" width="303" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-8Y-8Os">
+                            <rect key="frame" x="329" y="16" width="48" height="34"/>
+                            <state key="normal" title="Serach"/>
+                            <connections>
+                                <action selector="SearchAction:" destination="-1" eventType="touchUpInside" id="zkt-eG-wNT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Wqk-8Y-8Os" secondAttribute="trailing" constant="16" id="3Lk-6z-cIm"/>
+                        <constraint firstAttribute="bottom" secondItem="jum-fg-oCm" secondAttribute="bottom" constant="16" id="VfX-0L-lJh"/>
+                        <constraint firstItem="Wqk-8Y-8Os" firstAttribute="leading" secondItem="jum-fg-oCm" secondAttribute="trailing" constant="10" id="XSE-qx-Y4Q"/>
+                        <constraint firstItem="Wqk-8Y-8Os" firstAttribute="top" secondItem="IdR-LO-lv5" secondAttribute="top" constant="16" id="eIQ-jc-vjo"/>
+                        <constraint firstAttribute="bottom" secondItem="Wqk-8Y-8Os" secondAttribute="bottom" constant="16" id="mGr-cD-EX0"/>
+                        <constraint firstItem="jum-fg-oCm" firstAttribute="leading" secondItem="IdR-LO-lv5" secondAttribute="leading" constant="16" id="qVC-lY-FDx"/>
+                        <constraint firstItem="jum-fg-oCm" firstAttribute="top" secondItem="IdR-LO-lv5" secondAttribute="top" constant="16" id="tdr-lD-VEh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFV-su-vDM" userLabel="InfoView">
+                    <rect key="frame" x="0.0" y="125" width="393" height="693"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover a world of visual possibilities in our image bank. Each photo tells a story, what will be yours?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kig-NV-pvC">
+                            <rect key="frame" x="41.666666666666629" y="216" width="310" height="61"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="310" id="yPl-br-ijA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Exm-TA-9pC">
+                            <rect key="frame" x="87" y="307" width="219" height="219"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Exm-TA-9pC" secondAttribute="height" multiplier="1:1" id="8Uy-zs-MhZ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Kig-NV-pvC" firstAttribute="centerY" secondItem="DFV-su-vDM" secondAttribute="centerY" constant="-100" id="JJ9-Tt-Nnf"/>
+                        <constraint firstItem="Kig-NV-pvC" firstAttribute="centerX" secondItem="DFV-su-vDM" secondAttribute="centerX" id="ggP-cw-oUv"/>
+                        <constraint firstItem="Exm-TA-9pC" firstAttribute="top" secondItem="Kig-NV-pvC" secondAttribute="bottom" constant="30" id="lKs-HC-nX7"/>
+                        <constraint firstItem="Exm-TA-9pC" firstAttribute="centerX" secondItem="Kig-NV-pvC" secondAttribute="centerX" id="rWS-CU-Irz"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="103" y="20"/>
+            <constraints>
+                <constraint firstItem="IdR-LO-lv5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Vo-oT-dXK">
+                    <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                </constraint>
+                <constraint firstItem="DFV-su-vDM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9ro-Ud-Vhn"/>
+                <constraint firstItem="DFV-su-vDM" firstAttribute="top" secondItem="IdR-LO-lv5" secondAttribute="bottom" id="AcW-LY-Gb2"/>
+                <constraint firstItem="IdR-LO-lv5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZQZ-wm-tBP">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-200"/>
+                </constraint>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DFV-su-vDM" secondAttribute="bottom" id="ac2-YB-t6Q"/>
+                <constraint firstItem="DFV-su-vDM" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eBx-Rz-q1D"/>
+                <constraint firstItem="IdR-LO-lv5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="n6e-FT-gjg"/>
+            </constraints>
+            <point key="canvasLocation" x="101.5267175572519" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <image name="image" width="219" height="157"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
