@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44A17482C236FA500856B78 /* UnsplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A17472C236FA500856B78 /* UnsplashService.swift */; };
+		F44A174A2C23710900856B78 /* UnsplashResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A17492C23710900856B78 /* UnsplashResponse.swift */; };
 		F450A9442C22946700FE421E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9432C22946700FE421E /* AppDelegate.swift */; };
 		F450A94D2C22946900FE421E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F450A94C2C22946900FE421E /* Assets.xcassets */; };
 		F450A9502C22946900FE421E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F450A94F2C22946900FE421E /* Base */; };
@@ -15,6 +17,7 @@
 		F450A9672C22946900FE421E /* PSUIKITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9662C22946900FE421E /* PSUIKITUITestsLaunchTests.swift */; };
 		F450A9782C22971700FE421E /* SerachViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450A9772C22971700FE421E /* SerachViewController.xib */; };
 		F450A9792C22971700FE421E /* SerachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9762C22971700FE421E /* SerachViewController.swift */; };
+		F4D24F042C238C700033AEDC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4D24F032C238C700033AEDC /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F4D24F082C2394790033AEDC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F44A17472C236FA500856B78 /* UnsplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashService.swift; sourceTree = "<group>"; };
+		F44A17492C23710900856B78 /* UnsplashResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashResponse.swift; sourceTree = "<group>"; };
 		F450A9402C22946700FE421E /* PSUIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSUIKIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F450A9432C22946700FE421E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F450A94C2C22946900FE421E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D24F042C238C700033AEDC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F44A17452C236F8900856B78 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F44A17462C236F9000856B78 /* Data */,
+				F44A17472C236FA500856B78 /* UnsplashService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F44A17462C236F9000856B78 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F44A17492C23710900856B78 /* UnsplashResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		F450A9372C22946700FE421E = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F450A9432C22946700FE421E /* AppDelegate.swift */,
+				F44A17452C236F8900856B78 /* Services */,
 				F450A9742C22957E00FE421E /* Controllers */,
 				F450A9732C22957300FE421E /* Views */,
 				F450A9752C22967A00FE421E /* Reources */,
@@ -158,12 +195,16 @@
 				F450A93C2C22946700FE421E /* Sources */,
 				F450A93D2C22946700FE421E /* Frameworks */,
 				F450A93E2C22946700FE421E /* Resources */,
+				F4D24F082C2394790033AEDC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PSUIKIT;
+			packageProductDependencies = (
+				F4D24F032C238C700033AEDC /* Alamofire */,
+			);
 			productName = PSUIKIT;
 			productReference = F450A9402C22946700FE421E /* PSUIKIT.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +277,9 @@
 				Base,
 			);
 			mainGroup = F450A9372C22946700FE421E;
+			packageReferences = (
+				F4D24F022C238C700033AEDC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F450A9412C22946700FE421E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,6 +325,8 @@
 			files = (
 				F450A9792C22971700FE421E /* SerachViewController.swift in Sources */,
 				F450A9442C22946700FE421E /* AppDelegate.swift in Sources */,
+				F44A174A2C23710900856B78 /* UnsplashResponse.swift in Sources */,
+				F44A17482C236FA500856B78 /* UnsplashService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +669,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4D24F022C238C700033AEDC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4D24F032C238C700033AEDC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4D24F022C238C700033AEDC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F450A9382C22946700FE421E /* Project object */;
 }

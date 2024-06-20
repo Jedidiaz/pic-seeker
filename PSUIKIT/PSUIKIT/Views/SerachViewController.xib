@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SerachViewController" customModule="PSUIKIT" customModuleProvider="target">
             <connections>
+                <outlet property="infoView" destination="DFV-su-vDM" id="K2n-R8-Ax2"/>
                 <outlet property="searchButton" destination="Wqk-8Y-8Os" id="8Na-Wd-eIU"/>
                 <outlet property="searchTextField" destination="jum-fg-oCm" id="qlm-xe-1ET"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
