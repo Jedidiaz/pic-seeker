@@ -15,9 +15,12 @@
 		F450A95B2C22946900FE421E /* PSUIKITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A95A2C22946900FE421E /* PSUIKITTests.swift */; };
 		F450A9652C22946900FE421E /* PSUIKITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9642C22946900FE421E /* PSUIKITUITests.swift */; };
 		F450A9672C22946900FE421E /* PSUIKITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9662C22946900FE421E /* PSUIKITUITestsLaunchTests.swift */; };
-		F450A9782C22971700FE421E /* SerachViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450A9772C22971700FE421E /* SerachViewController.xib */; };
+		F450A9782C22971700FE421E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F450A9772C22971700FE421E /* SearchViewController.xib */; };
 		F450A9792C22971700FE421E /* SerachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A9762C22971700FE421E /* SerachViewController.swift */; };
 		F4D24F042C238C700033AEDC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4D24F032C238C700033AEDC /* Alamofire */; };
+		F4D24F0F2C23C5960033AEDC /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D24F0D2C23C5960033AEDC /* ImageCollectionViewCell.swift */; };
+		F4D24F102C23C5960033AEDC /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D24F0E2C23C5960033AEDC /* ImageCollectionViewCell.xib */; };
+		F4D24F132C23D0080033AEDC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F4D24F122C23D0080033AEDC /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +67,9 @@
 		F450A9642C22946900FE421E /* PSUIKITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUIKITUITests.swift; sourceTree = "<group>"; };
 		F450A9662C22946900FE421E /* PSUIKITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUIKITUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F450A9762C22971700FE421E /* SerachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachViewController.swift; sourceTree = "<group>"; };
-		F450A9772C22971700FE421E /* SerachViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerachViewController.xib; sourceTree = "<group>"; };
+		F450A9772C22971700FE421E /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		F4D24F0D2C23C5960033AEDC /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4D24F0E2C23C5960033AEDC /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D24F132C23D0080033AEDC /* Kingfisher in Frameworks */,
 				F4D24F042C238C700033AEDC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +143,9 @@
 				F44A17452C236F8900856B78 /* Services */,
 				F450A9742C22957E00FE421E /* Controllers */,
 				F450A9732C22957300FE421E /* Views */,
+				F4D24F0B2C23C5500033AEDC /* Models */,
 				F450A9752C22967A00FE421E /* Reources */,
+				F4D24F142C23D3530033AEDC /* Utils */,
 				F450A9512C22946900FE421E /* Info.plist */,
 			);
 			path = PSUIKIT;
@@ -163,7 +171,7 @@
 		F450A9732C22957300FE421E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F450A9772C22971700FE421E /* SerachViewController.xib */,
+				F450A9772C22971700FE421E /* SearchViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +193,30 @@
 			path = Reources;
 			sourceTree = "<group>";
 		};
+		F4D24F0B2C23C5500033AEDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4D24F0C2C23C57B0033AEDC /* ImageModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4D24F0C2C23C57B0033AEDC /* ImageModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4D24F0D2C23C5960033AEDC /* ImageCollectionViewCell.swift */,
+				F4D24F0E2C23C5960033AEDC /* ImageCollectionViewCell.xib */,
+			);
+			path = ImageModel;
+			sourceTree = "<group>";
+		};
+		F4D24F142C23D3530033AEDC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +236,7 @@
 			name = PSUIKIT;
 			packageProductDependencies = (
 				F4D24F032C238C700033AEDC /* Alamofire */,
+				F4D24F122C23D0080033AEDC /* Kingfisher */,
 			);
 			productName = PSUIKIT;
 			productReference = F450A9402C22946700FE421E /* PSUIKIT.app */;
@@ -279,6 +312,7 @@
 			mainGroup = F450A9372C22946700FE421E;
 			packageReferences = (
 				F4D24F022C238C700033AEDC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F4D24F112C23D0070033AEDC /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = F450A9412C22946700FE421E /* Products */;
 			projectDirPath = "";
@@ -297,7 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F450A94D2C22946900FE421E /* Assets.xcassets in Resources */,
-				F450A9782C22971700FE421E /* SerachViewController.xib in Resources */,
+				F450A9782C22971700FE421E /* SearchViewController.xib in Resources */,
+				F4D24F102C23C5960033AEDC /* ImageCollectionViewCell.xib in Resources */,
 				F450A9502C22946900FE421E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F450A9792C22971700FE421E /* SerachViewController.swift in Sources */,
+				F4D24F0F2C23C5960033AEDC /* ImageCollectionViewCell.swift in Sources */,
 				F450A9442C22946700FE421E /* AppDelegate.swift in Sources */,
 				F44A174A2C23710900856B78 /* UnsplashResponse.swift in Sources */,
 				F44A17482C236FA500856B78 /* UnsplashService.swift in Sources */,
@@ -679,6 +715,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		F4D24F112C23D0070033AEDC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -686,6 +730,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4D24F022C238C700033AEDC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F4D24F122C23D0080033AEDC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4D24F112C23D0070033AEDC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

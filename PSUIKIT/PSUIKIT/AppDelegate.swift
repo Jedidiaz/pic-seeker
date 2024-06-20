@@ -24,7 +24,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: - Private methods
     private func setupNavigationController () {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let kNavigationController = UINavigationController(rootViewController: SerachViewController())
+        let kNavigationController = UINavigationController(rootViewController: SearchViewController())
         window?.rootViewController = kNavigationController
         window?.makeKeyAndVisible()
     }
